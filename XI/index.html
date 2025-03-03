@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon_io/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    </style>
+  <title>자이</title>
+</head>
+<body>
+  <div id="overlay"></div>
+  <div id="overlay_1"></div>
+  <header id="main">
+    <nav id="nav_p">
+      <h1><span></span><a href="index.html">LOGO</a></h1>
+      <ul>
+        <li>브랜드
+          <ul>
+            <li>
+              <a href="#">브랜드 아이덴티티</a>
+            </li>
+            <li>
+              <a href="#">자이 갤러리</a>
+            </li>
+          </ul>
+        </li> 
+        <li>분양정보
+          <ul>
+            <li>
+              <a href="#">분양단지</a>
+            </li>
+            <li>
+              <a href="#">공사단지</a>
+            </li>
+            <li>
+              <a href="#">입주단지</a>
+            </li>
+          </ul>
+        </li>
+        <li>고객서비스
+          <ul>
+            <li>
+              <a href="#">청약가이드</a>
+            </li>
+            <li>
+              <a href="#">계약정보</a>
+            </li>
+            <li>
+              <a href="#">입주가이드</a>
+            </li>
+            <li>
+              <a href="#">고객문의</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div id="top_btn">
+        <button id="search_btn" aria-label="검색 버튼"></button>
+        <button id="login_btn" aria-label="회원정보 버튼" aria-describedby="login_desc"></button>
+        <span id="login_desc" class="screen_out">로그아웃 상태에서 클릭 시 로그인과, 회원가입 경로로 안내됩니다.</span>
+      </div>
+    </nav>
+    <div id="hamburger">
+      <h1><a href="index.html">LOGO</a></h1>
+      <div class="btn_wrap">
+        <button id="search_btn_m" aria-label="검색 버튼"></button>
+        <button id="login_btn_m" aria-label="회원정보 버튼" aria-describedby="login_desc_m"></button>
+        <span id="login_desc_m" class="screen_out">로그아웃 상태에서 클릭 시 로그인과, 회원가입 경로로 안내됩니다.</span>
+        <div id="ham_btn">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <nav id="ham_menu">
+      <ul>
+        <li> <p>브랜드</p>
+          <ul>
+            <li>
+              <a href="#">브랜드 아이덴티티</a>
+            </li>
+            <li>
+              <a href="#">자이 갤러리</a>
+            </li>
+          </ul>
+        </li> 
+        <li> 
+          <p>분양정보</p>
+          <ul>
+            <li>
+              <a href="#">분양단지</a>
+            </li>
+            <li>
+              <a href="#">공사단지</a>
+            </li>
+            <li>
+              <a href="#">입주단지</a>
+            </li>
+          </ul>
+        </li>
+        <li> <p>고객서비스</p>
+          <ul>
+            <li>
+              <a href="#">청약가이드</a>
+            </li>
+            <li>
+              <a href="#">계약정보</a>
+            </li>
+            <li>
+              <a href="#">입주가이드</a>
+            </li>
+            <li>
+              <a href="#">고객문의</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <a href="https://xisnd.com/" class="side_m" target="_blank">XI - S&D</a>
+    <div id="search">
+      <form>
+        <label for="search_l">통합검색</label>
+        <input type="text" id="search_l" name="search" placeholder="원하는 검색어를 입력해 보세요.">
+        <button class="search_btn" type="submit" aria-label="검색"></button>
+      </form>
+    </div>
+    <div id="login">
+      <div>
+        <span>MY XI</span>
+        <button id="close_btn"><img src="Img/Main/close.png" alt="로그인 닫기 버튼"></button>
+      </div>
+      <div>
+        <p>로그인이 필요한 <br> 메뉴입니다</p>
+        <a href="#">로그인</a>
+        <a href="member.html" id="signup-btn">회원가입</a>
+      </div>
+    </div>
+    <a href="https://xisnd.com/" class="side" target="_blank">XI - S&D</a>
+    <div class="main_txt">
+      <h2>LIVE XI</h2>
+      <p>삶의 새로운 기준, <br> &lt;자이&gt;에서 만나는 완벽한 공간의 아름다움.</p>
+    </div>
+    <div class="scroll"></div>
+    <div id="side_nav">
+      <ul>
+        <li>
+          <a href="#main" class="active"></a>
+        </li>
+        <li>
+          <a href="#sec2"></a>
+        </li>
+        <li>
+          <a href="#sec3"></a>
+        </li>
+        <li>
+          <a href="#sec4"></a>
+        </li>
+        <li>
+          <a href="#sec5"></a>
+        </li>
+        <li>
+          <a href="#sec6"></a>
+        </li>
+        <li>
+          <a href="#sec7"></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <section id="sec2" aria-label="자이 주요 단지 정보">
+    <div>
+      <a id="best_1" href="https://www.xi.co.kr/pchxi" target="_blank">
+        <div class="txt_1">
+          <div class="fi">분양중</div>
+          <h3>평촌자이 퍼스니티</h3>
+        </div>
+        <div class="txt_2">
+          <span></span>
+          <p class="date">2024년 11월</p>
+          <ul>
+            <li>
+              <p>분양시기</p>
+              <p>2024년 11월</p>
+            </li>
+            <li>
+              <p>세대수</p>
+              <p>총 2,737세대 中 일반분양 570세대</p>
+            </li>
+            <li>
+              <p>위치</p>
+              <p>경기도 안양시 동안구 비산3동 354-10</p>
+            </li>
+            <li>
+              <p>분양문의</p>
+              <p>1833-4723</p>
+            </li>
+          </ul>
+        </div>
+      </a>
+      <a id="best_2" href="https://xi.co.kr/SS" target="_blank">
+        <div class="txt_1">
+          <div class="fi">분양중</div>
+          <h3>성성자이 레이파크</h3>
+        </div>
+        <div class="txt_2">
+          <span></span>
+          <p class="date">2024년 11월</p>
+          <ul>
+            <li>
+              <p>분양시기</p>
+              <p>2024년 11월</p>
+            </li>
+            <li>
+              <p>세대수</p>
+              <p>1,104세대</p>
+            </li>
+            <li>
+              <p>위치</p>
+              <p>충청남도 천안시 서북구 성성동 287-3번지 일원</p>
+            </li>
+            <li>
+              <p>분양문의</p>
+              <p>1833-4478</p>
+            </li>
+          </ul>
+        </div>
+      </a>
+      <a id="best_3" href="https://www.xi.co.kr/bax" target="_blank">
+        <div class="txt_1">
+          <div class="fi">분양중</div>
+          <h3>부천아테라자이</h3>
+        </div>
+        <div class="txt_2">
+          <span></span>
+          <p class="date">2024년 09월</p>
+          <ul>
+            <li>
+              <p>분양시기</p>
+              <p>2024년 09월</p>
+            </li>
+            <li>
+              <p>세대수</p>
+              <p>총 200세대</p>
+            </li>
+            <li>
+              <p>위치</p>
+              <p>부천괴안 공공주택지구 B2BL</p>
+            </li>
+            <li>
+              <p>분양문의</p>
+              <p>1833-4412</p>
+            </li>
+          </ul>
+        </div>
+      </a>
+    </div>
+  </section>
+  <section id="sec3" aria-labelledby="luxury_title">
+    <div class="background"></div>
+    <div class="over">
+      <div class="sec3_txt">
+        <h3 id="luxury_title">ESSENCE<span>OF LUXURY</span></h3>
+        <p>프리미엄 라이프스타일의 진정한 가치<br>
+          자이에서 시작됩니다.</p>
+      </div>
+    </div>
+  </section>
+  <section id="sec4">
+    <div class="sec4_1 slide active">
+      <div class="sec4_txt">
+        <div class="scroll_4"></div>
+        <h3>HERITAGE</h3>
+        <p>삶의 기록을 담아낸 역사 <br>
+           자이가 만든 특별한 흔적을 만나보세요.</p>
+      </div>
+    </div>
+    <div class="sec4_2 slide">
+      <div class="sec4_txt">
+        <div class="scroll_4"></div>
+        <h3>TRANQUILITY</h3>
+        <p>평온함과 우아한 디자인으로 <br>
+          현대 주거의 기준을 새롭게 정의합니다.</p>
+      </div>
+    </div>
+    <div class="sec4_3 slide">
+      <div class="sec4_txt">
+        <div class="scroll_4"></div>
+        <h3>CONNECTION</h3>
+        <p>사람과 공간이 연결되는 순간<br>
+          아름다운 커뮤니티를 경험하세요.</p>
+      </div>
+    </div>
+    <div class="indicators">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+  <section id="sec5">
+    <div id="sec5_wrap">
+      <div class="card">
+        <div>
+          <div>
+            <img src="Img/Section/sec5_icon1.png" alt="분양고객 아이콘">
+            <p>분양고객</p>
+          </div>
+          <ul>
+            <li><a href="#">청약가이드</a></li>
+            <li><a href="#">관심단지 바로가기</a></li>
+          </ul>
+        </div>
+        <div>
+          <div>
+            <img src="Img/Section/sec5_icon2.png" alt="계약고객 아이콘">
+            <p>계약고객</p>
+          </div>
+          <ul>
+            <li><a href="#">계약정보</a></li>
+            <li><a href="#">중도금 납부 조회</a></li>
+          </ul>
+        </div>
+        <div>
+          <div>
+            <img src="Img/Section/sec5_icon3.png" alt="입주고객 아이콘">
+            <p>입주고객</p>
+          </div>
+          <ul>
+            <li><a href="#">입주가이드</a></li>
+            <li><a href="#">예약하기</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="service">
+        <h3>SERVICE</h3>
+        <p>고객센터 1577-4254</p>
+        <a href="tel:15774254">고객문의</a>
+      </div>
+    </div>
+  </section>
+  <section id="sec6">
+    <div id="sec6_wrap">
+      <div id="txt_wrap">
+        <h3><span>Xi</span>NEWS</h3>
+        <p>자이의 다양한 소식을 전합니다.</p>
+      </div>
+      <div id="slide">
+        <span class="left no"></span>
+        <span id="num">01<span class="mid">/</span></span>
+        <span>05</span>
+        <span class="right"></span>
+      </div>
+      <div id="slide_wrap">
+        <div>
+          <span>자이소식</span>
+          <strong>[ 개인정보 이용내역 통지 안내 ]</strong>
+          <p class="desc">   안녕하세요. GS건설입니다.항상 저희 GS건설자이를 이용해주셔서 진심으로 감사드립니다.당사는 고객님의 소중한 개인정보가 안전하게 관리될 수 있도록 노력하고 있으며,개인정보보호법 제20조의2에 따라 연1회 고객님들께 개인정보 이용내역을 안내해드립니다.</p>
+          <p class="date">date.2024.12.20</p>
+          <a href="#">기사보기</a>
+        </div>
+        <div>
+          <span>자이소식</span>
+          <strong>[ 천안 대표 '불당지구' ]</strong>
+          <p class="desc">‘아산 탕정자이 퍼스트시티’는 천안을 대표하는 불당지구와 중부권 최대 도시개발사업으로 예정된 아산탕정2를 잇는 중심축에 위치한다./GS건설 제공GS건설이 12월 충청남도 아산시 탕정면에서 ‘아산 탕정자이 퍼스트시티’를 분양하고 있다. ‘아산 탕정자이 퍼스트시티’는 아산신도시센트럴시티 도시개발사업에서 처음 공급하는 아파트다. GS건설은 구역 내 3개(A1, A2, A3) 블록에 총 3673가구에 달하는 자이 브랜드 타운을 조성한다. 12월 ‘아산 탕정자이 퍼스트시티’를 시작으로 순차 분양에 들어간다.‘아산 탕정자이 퍼스트시티’는 지하 2층~지상 35층, 6개 동 규모로 지어진다. 전용면적 별로는 ▲59㎡A 102가구 ▲59㎡B 34가구 ▲84㎡A 466가구 ▲84㎡B 95가구 ▲84㎡C 65가구 ▲84㎡D 30가구 ▲125㎡PA 3가구 ▲125㎡PB 2가구 등 총 797가구이다.‘아산 탕정자이 퍼스트시티’는 천안을 대표하는 불당지구와 중부권 최대 도시개발사업으로 예정된 아산탕정2를 잇는 중심축에 자리하고 있다. 불당지구는 학원가, 다양한 편의시설 등 편리한 생활 인프라를 갖춰 천안ㆍ아산권 아파트 시세를 이끄는 주거 선호 일번지로 꼽힌다. 약 4만5000명을 수용하는 규모로 조성되는 아산탕정2는 내년 착공에 들어가 2029년 완공을 목표로 하고 있다. 현재 토지보상을 진행 중이다. 향후 단지와 불당지구가 고가(예정)로 연결되면 접근성은 한층 개선될 전망이다.‘아산 탕정자이 퍼스트시티’는 천안ㆍ아산 산업단지 곳곳으로 이동할 수 있는 직주근접 입지를 갖추고 있다. 삼성로를 따라 삼성 아산디스플레이시티로 편리하게 출ㆍ퇴근할 수 있다. 삼성전자 나노시티 온양캠퍼스, 삼성SDI 천안사업장, 탕정천안 내 일반산업단지로의 이동도 편리하다. 또한 인근에 위치한 천안아산역을 통해 수도권을 오가기 쉽다. 향후 KTX천안아산역 광역복합환승센터가 들어서면 교통 여건이 한층 좋아지게 된다. 백화점, 코스트코, 이마트 등 쇼핑시설도 편리하게 이용할 수 있다.채광과 통풍을 고려한 남향 위주의 단지 배치로 쾌적한 주거환경을 갖추고 있다. 일부 세대에는 4베이, 3면 발코니 평면구조를 적용해 공간감과 일조량을 극대화했다. 팬트리, 드레스룸 등을 도입해 공간 활용성을 높였다.커뮤니티센터인 ‘클럽 자이안’도 들어선다. 독서실, 피트니스클럽, 골프연습장, GX룸, 사우나 등이 마련되며 주동 34층에는 입주민 전용 스카이라운지 ‘클럽 클라우드’도 만든다. 이 곳에는 교보문고가 북 큐레이션 서비스를 제공하는 북카페와 게스트하우스가 들어선다.GS건설 분양 관계자는 “아산 탕정자이 퍼스트시티가 들어서면 불당지구부터 아산신도시센트럴시티, 아산탕정2를 잇는 도시가 모습을 드러내고 지역 내 새로운 주거 중심 라인으로 떠오를 것”이라며 “총 3673가구로 조성될 자이 타운의 규모와 브랜드에 걸맞게 입주민들이 자부심을 가지고 거주할 수 있는 아파트로 짓겠다”고 말했다.견본주택은 천안시 서북구 불당동 1517(불당119 안전센터 부근)에 들어선다. 입주는 2027년 하반기 예정이다.문의 1833-2543   [출처 : 조선일보 최승혜 객원기자]2024.12.20. 00:30 게시https://www.chosun.com/special/special_section/2024/12/20/NPUCMJLHWRG4BOKXPTA3ISUVX4</p>
+          <p class="date">date.2024.12.20</p>
+          <a href="#">기사보기</a>
+        </div>
+        <div>
+          <span>자이소식</span>
+          <strong>[ GS건설 ‘아산탕정자이 퍼스트시티’ ]</strong>
+          <p class="desc">GS건설 제공GS건설은 충남 아산시 탕정면에 ‘아산탕정자이 퍼스트시티’를 분양하고 있다. 아산탕정자이 퍼스트시티는 아산신도시센트럴시티 도시개발사업 내 첫 공급으로 구역 내 3개(A1, A2, A3) 블록에서 총 3673가구로 조성될 예정이다.아산탕정자이 퍼스트시티는 지하 2층~지상 35층, 6개동 규모로 구성되며 타입별 일반분양 가구 수는 59㎡A 102가구, 59㎡B 34가구, 84㎡A 466가구, 84㎡B 95가구, 84㎡C 65가구, 84㎡D 30가구, 125㎡PA 3가구, 125㎡PB 2가구 등 총 797가구다.한국부동산원청약홈에서 오는 19일 특별공급을 시작으로 20일 1순위 청약을 받는다. 당첨자는 오는 30일 발표되고, 계약은 내년 1월 10~12일 진행될 예정이다. 1순위 청약 대상자는 모집공고일 기준 아산시 및 충남, 대전시, 세종시 거주자 중 만 19세 이상이면서 청약통장 가입 기간 6개월 이상, 지역별·면적별 예치금 충족자다. 주택을 보유해도 1순위 청약이 가능하며 재당첨 제한을 적용받지 않는다. 계약금(10%) 완납 후 즉시 전매도 가능하다.아산탕정자이 퍼스트시티는 학원가를 비롯해 우수한 생활 인프라를 갖췄다는 점이 강점으로 꼽힌다. 아산, 천안에 위치한 산업단지 곳곳으로 이동할 수 있는 직주근접형 입지다. GS건설 분양 관계자는 “자이 타운의 규모와 브랜드에 걸맞게 차별화된 상품을 선보일 것”이라고 했다. [출처 : 국민일보]2024-12-17 18:03 게시https://www.kmib.co.kr/article/view.asp?arcid=1734325032</p>
+          <p class="date">date.2024.12.20</p>
+          <a href="#">기사보기</a>
+        </div>
+        <div>
+          <span>자이소식</span>
+          <strong>[ 분양 포커스 ]</strong>
+          <p class="desc">대구역자이 더 스타‘대구역자이 더 스타’(조감도)는 대구시 북구 칠성동2가 500-2번지 일원에 총 505가구 규모로 들어선다.GS건설은 대구시 북구 칠성동 2가 500-2번지 일원에 짓는 주상복합아파트 ‘대구역자이 더 스타’를 선착순 분양 중이다. 이 단지는 지하 5층~지상 최고 47층, 3개 동 규모로 아파트 424가구, 주거용 오피스텔 81실로 구성된다. 전용면적별로는 아파트가 77㎡ 84가구, 84A㎡ 84가구, 84B㎡ 169가구, 84C㎡ 84가구, 113㎡ 3가구이고 주거용 오피스텔은 84㎡ 81실 등으로 구성된다.대구의 원도심 지역인 대구역과 바로 인접한 초역세권에 들어선다. 초역세권답게 편리한 교통을 자랑한다. 단지 바로 앞 대구도시철도 1호선과 경부선 대구역을 이용해 시내외 어디든지 편리하게 이동할 수 있다. 태평로, 신천대로 등 주요 대로가 인접해 있어 대구 시내 어디로나 접근이 쉽다.[대구광역철도 14일 개통 앞둬]비수도권 최초 광역철도인 ‘대구광역철도’(대경선)가 오는 14일 개통을 앞두고 있어 이 단지 가치는 더 높아질 전망이다. 대경선은 구미부터 경산까지 잇는 노선으로 구미, 사곡, 북삼, 왜관, 서대구역, 대구역, 동대구역, 경산 등의 역을 통해 대구시와 경북 8개 시군에 광역환승제를 도입해 대경선과 도시철도, 시내버스 간 환승을 할 수 있다.도심의 풍부한 생활인프라도 갖췄다. 단지 바로 앞에 롯데백화점이 있고 동성로 상권, 이마트, 칠성시장 등을 편리하게 이용할 수 있다. 콘서트하우스, 오페라하우스, 삼성창조캠퍼스, 대구복합스포츠타운 등 문화생활 편의시설도 단지 인근에 갖춰져 있다. 걸어서 통학 가능한 옥산초를 비롯해 경명여중·고, 칠성고 등이 인근에 있어 구미, 칠곡, 경산 등을 오가는 직장인 출퇴근이 편리해질 것으로 기대된다.[칠성동 개발 땐 거대 주거타운]대구 도심의 마지막 남은 요지로 관심을 끌어온 칠성동 개발이 완료되면 침산, 고성, 칠성동을 아우르는 거대 도심 주거타운이 형성된다. 특히 대구역 역세권은 교통, 쇼핑, 문화를 모두 만족하게 하는 고급 주거지로 탈바꿈해 도심 생활의 편리함을 추구하는 시민의 유입이 두드러질 것으로 예상된다.분양가는 2022년 당시 분양가가 그대로 적용되고 잔여 가구에 한해 중도금 전액이 잔금으로 이월돼 중도금 대출이자 부담이 없다. 견본주택은 대구시 달서구 두류동에 있다. 내년 4월 입주 예정이다. 문의 1644-0260  [출처 : 중앙일보 배문선 조인스랜드기자]2024.12.13 05:31 게시https://www.joongang.co.kr/article/25299665</p>
+          <p class="date">date.2024.12.20</p>
+          <a href="#">기사보기</a>
+        </div>
+        <div>
+          <span>자이소식</span>
+          <strong>[ 대구 '랜드마크' ]</strong>
+          <p class="desc">‘대구역 자이 더 스타’는 대구의 원도심 지역인 대구역과 바로 인접한 초역세권에 들어선다. 대구역은 오는 14일 대구광역철도도 개통한다. /GS건설 제공GS건설이 대구시 북구 칠성동2가 500-2번지에 들어서는 주상복합아파트 ‘대구역 자이 더 스타’를 선착순 분양 중이다. ‘대구역 자이 더 스타’는 지하 5층~지상 최고 47층, 3개 동, 아파트 424세대·주거용 오피스텔 81호실 등 총 505세대 규모로 지어진다.전용면적 별로는 아파트 ▲77㎡ 84세대 ▲84A㎡ 84세대 ▲84B㎡ 169세대 ▲84C㎡ 84세대 ▲113㎡ 3세대다. 주거용 오피스텔은 84㎡ 81호실로 구성됐다.‘대구역 자이 더 스타’는 대구의 원도심 지역인 대구역과 바로 인접한 초역세권에 들어선다. 단지 바로 앞 대구도시철도 1호선과 경부선 대구역을 이용해 시내·외 어디든 편리하게 이동할 수 있다. 또한 태평로, 신천대로 등 주요 대로가 인접해 있어 대구 시내 어디로나 오가기 쉽다.여기에 비수도권 최초의 광역철도인 대구광역철도(대경선)가 오는 14일 개통을 앞두고 있어 ‘대구역 자이 더 스타’의 미래가치는 더욱 높아질 전망이다. 대경선은 구미부터 경산까지 잇는 노선이다. 대구시와 경북 8개 시·군에 광역환승제가 도입돼 대경선과 도시철도, 시내버스 간 환승을 할 수 있다. 대경선이 개통되면 구미, 칠곡, 경산 등을 오가는 직장인들의 출퇴근이 편리해질 것으로 기대된다.풍부한 생활인프라도 갖췄다. 단지 바로 앞에 롯데백화점이 있고 동성로 상권, 이마트, 칠성시장 등을 편리하게 이용할 수 있다. 콘서트하우스, 오페라하우스, 삼성 창조캠퍼스, 대구 복합스포츠타운 등 문화·체육시설도 잘 갖춰져 있다. 옥산초등학교를 걸어서 통학할 수 있다. 경명여중·고, 칠성고도 인근에 자리하고 있다.최근 대구역 일대 칠성동이 신흥 주거타운으로 개발되고 있어 이에 따른 수혜도 기대된다. 대구 도심에서 마지막 남은 요지로서 관심을 끌어온 칠성동은 개발이 완료되면 침산, 고성, 칠성동을 아우르는 거대 도심 주거타운으로 거듭나게 된다. 특히 대구역 역세권은 교통, 쇼핑, 문화 모두를 만족시키는 주거지역으로 탈바꿈해 시민들의 유입이 두드러질 것으로 예상된다.GS 건설 관계자는 “‘대구역 자이 더 스타’는 대구의 최중심인 대구역 근처에 들어서는 만큼 이 일대 랜드마크가 될 것”이라며 “내년 입주할 때까지 자이(Xi)가 가진 기술력과 노하우로 최선을 다해 시공할 것”이라고 말했다.‘대구역 자이 더 스타’는 2022년 당시 분양가가 그대로 적용돼 다른 분양단지에 비해 경쟁력을 갖췄다. 중도금 전액이 잔금으로 이월될 예정이어서 잔여세대는 중도금 대출이자 부담이 전혀 없다. 계약축하금도 지급한다.견본주택은 달서구 두류동에 열어놨다. 입주 예정일은 2025년 4월이다.문의 1644-0260  [출처 : 조선일보 최승혜 객원기자]2024.12.12. 00:30 게시https://www.chosun.com/special/special_section/2024/12/12/7N4J3DSJJ5FH3ATAHJL3ZBGJUY</p>
+          <p class="date">date.2024.12.20</p>
+          <a href="#">기사보기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="sec7">
+    <div>
+      <img src="Img/Section/f_logo.png" alt="하단 자이 로고">
+      <div>
+        <a href="#">개인정보처리방침</a>
+        <span></span>
+        <p>고객센터 1577-4254</p>
+        <div class="custom-select">
+          <ul class="select-options">
+            <li data-value="https://www.gsenc.com/">GS건설</li>
+            <li data-value="https://www.elysian.co.kr/">엘리시안</li>
+            <li data-value="https://xisnd.com/">자이S&D</li>
+            <li data-value="https://www.heimlab.co.kr/">하임랩</li>
+          </ul>
+          <div class="select-trigger">FAMILY SITE</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <address>서울특별시 종로구 종로33그랑서울</address>
+        <p>Copyright©2024 Xi.ALL.RIGHT RESERVED.</p>
+      </div>
+      <a href="https://isms.kisa.or.kr/main/ispims/issue/?certificationMode=list&crtfYear=&searchCondition=2&searchKeyword=%EC%A7%80%EC%97%90%EC%8A%A4%EA%B1%B4%EC%84%A4&__encrypted=U8oaEwTLg12yqNDZuCwRPMiDRLgcrZjlbxomU5uctoZc1kXWONBhXaf0KhG%2BaV6wpp2zSeTry6yKT1QpQPP4n6Wl4JbzPyTKSn7s1FoRr90UnnwTp%2BW928V1TpyMuwFVMU8D270RkIg564CRAF0bUnkvpnfyAxjhbyn0pSpjvw%2BMlXuoQnR3oJUfvVi%2B1dac8Gnd7jHhSmiDLOX09CuWhVRPx40RuMcaT/HbItyyZvQECWvcAvRb36C1zB/nwnWRJNfv74iaCKBgpNE%2BERnypNyBfcqQSKf%2BfDsW9aHcpTOO1K747YgBrg%3D%3D" target="_blank" aria-label="웹사이트 보안 인증 확인 페이지로 이동">
+        <img src="Img/Section/f_a.png" alt="한국인터넷진흥원 심사 인증 아이콘">
+      </a>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
