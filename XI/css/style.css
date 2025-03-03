@@ -2183,3 +2183,11 @@ address+p {
         bottom: -40px;
     }
 }
+@media screen and (min-width: 2070px) {
+    #sec5 .card>div {
+        width: 340px;
+    }
+    #sec5 .card {
+        gap: 20px;
+    }
+}
