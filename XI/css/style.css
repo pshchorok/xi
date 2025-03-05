@@ -1822,7 +1822,7 @@ address+p {
         line-height: 90px;
     }
     #search>form input {
-        width: 360px;
+        width: 320px;
         margin-top: 0;
     }
     #search label {
@@ -2148,6 +2148,21 @@ address+p {
         font-size: 13px;
     }
 }
+@media screen and (max-width: 420px) {
+    #sec5 .card>div>ul {
+        right: 10px;
+    }
+    #sec5 .card>div>div p,
+    #sec5 .card>div>div img {
+        left: 20px;
+    }
+    #sec5 .card>div>ul a {
+        font-size: 13px;
+    }
+    #sec5 .card>div>div p {
+        font-size: 16.5px;
+    }
+}
 @media screen and (max-width: 500px) {
     #ham_menu {
         width: 100%;
@@ -2181,6 +2196,22 @@ address+p {
     }
     #sec6 #slide {
         bottom: -40px;
+    }
+}
+@media screen and (max-height:800px) {
+    #sec5.active .service a {
+        margin: 20px auto;
+    }
+    #sec5 .service {
+        top: 10%;
+    }
+}
+@media screen and (max-height:670px) {
+    #sec6 #txt_wrap h3+p {
+        display: none;
+    }
+    #sec6 #txt_wrap h3 {
+        font-size: 60px;
     }
 }
 @media screen and (min-width: 2070px) {
